@@ -11,7 +11,7 @@ class Patient extends Model
     use HasFactory, SoftDeletes;
     
     protected $table = 'patients_new';
-    
+    protected $primaryKey = 'id';
     protected $fillable = [
         'first_name',
         'last_name',

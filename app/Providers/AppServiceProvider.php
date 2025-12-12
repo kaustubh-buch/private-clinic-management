@@ -6,6 +6,8 @@ use App\Models\User;
 use Illuminate\Auth\Notifications\ResetPassword;
 use Illuminate\Notifications\Messages\MailMessage;
 use Illuminate\Support\ServiceProvider;
+use App\Repositories\Contracts\PatientRepositoryInterface;
+use App\Repositories\PatientRepository;
 
 class AppServiceProvider extends ServiceProvider
 {
@@ -14,7 +16,10 @@ class AppServiceProvider extends ServiceProvider
      */
     public function register(): void
     {
-        //
+        $this->app->bind(
+            PatientRepositoryInterface::class,
+            PatientRepository::class
+        );
     }
 
     /**

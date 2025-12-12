@@ -16,7 +16,7 @@ class UpdatePatientRequest extends FormRequest
         return [
             'first_name'     => 'required|string|max:255',
             'last_name'      => 'required|string|max:255',
-            'email'          => 'required|email|unique:patients,email,' . $this->patient->id,
+            'email'          => 'required|email',
             'contact_number' => 'nullable|string|max:20',
         ];
     }
