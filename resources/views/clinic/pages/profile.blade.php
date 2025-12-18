@@ -135,7 +135,7 @@
                                                     src="{{ asset('front/images/info-icon.svg') }}" alt="Reload Icon">
                                             </div>
                                             <div class="tooltip-text">If your clinic’s software automatically sends 6-month
-                                                recall SMS reminders, Smile Orbit will account for this to ensure patients
+                                                recall SMS reminders, Clinic Management will account for this to ensure patients
                                                 aren’t contacted too frequently.
                                                 <div class="tooltip-arrow" data-arrow></div>
                                             </div>
@@ -154,7 +154,7 @@
                                                     src="{{ asset('front/images/info-icon.svg') }}" alt="Reload Icon">
                                             </div>
                                             <div class="tooltip-text">Get expert tips, feature updates, and exclusive
-                                                offers to help you maximize Smile Orbit. You can enable or disable this
+                                                offers to help you maximize Clinic Management. You can enable or disable this
                                                 anytime
                                                 <div class="tooltip-arrow" data-arrow></div>
                                             </div>

@@ -39,8 +39,8 @@
     @endif
     <div class="header-bottom">
         <div class="logo-wrapper">
-            <a href="{{ route('dashboard') }}" title="SmileOrbit">
-                <img src="{{ asset('front/images/smile-orbit-logo.svg') }}" alt="Site Logo">
+            <a href="{{ route('dashboard') }}" title="Clinicmanagement">
+                <img src="{{ asset('front/images/clinic-management-logo.svg') }}" alt="Site Logo">
             </a>
         </div>
         <div class="bottom-right-block">

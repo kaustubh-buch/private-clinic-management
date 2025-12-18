@@ -1,0 +1,536 @@
+.patients-import-wrapper-outer h2,
+.patients-import-wrapper-outer .h2 {
+    font-size: 1.8rem;
+    font-weight: 600;
+    letter-spacing: -0.008rem;
+    margin-bottom: 0.4rem;
+    color: var(--primary-text-color);
+}
+
+.patients-import-wrapper-outer p {
+    font-size: 1.3rem;
+    font-weight: 500;
+    color: var(--secondary-text-color);
+}
+
+.patients-import-wrapper-outer .form-block {
+    width: 100%;
+    max-width: 100%;
+}
+
+.error-message.has-bg {
+    padding: 1.1rem 1rem;
+    display: flex;
+    align-items: center;
+    gap: 0.4rem;
+    background: #fae5e5;
+    border-radius: 0.4rem;
+    margin-top: 1.6rem !important;
+    font-size: 1.2rem !important;
+    line-height: 1.4 !important;
+    font-weight: 600 !important;
+}
+
+.patients-import-wrapper-outer .checkbox-control label {
+    font-size: 1.6rem;
+    color: var(--primary-text-color);
+}
+
+.patients-import-wrapper-outer .tab-content {
+    overflow: unset;
+}
+
+.patients-import-wrapper-outer .pt-18 {
+    padding-top: 1.8rem !important;
+}
+
+.patients-import-wrapper-outer .title-block .primary-link {
+    text-decoration: underline;
+    text-underline-offset: 3px;
+}
+
+.patients-import-wrapper-outer .title-block .primary-link:hover {
+    text-decoration: none;
+}
+
+/* stepper common css */
+.stepper-outer-wrapper.steps-outside-card.sw-theme-basic>.nav .nav-item {
+    background-color: #f4f5f7;
+}
+
+.stepper-outer-wrapper.steps-outside-card.sw-theme-basic>.nav .nav-item:not(:last-child) {
+    flex: 1;
+    position: relative;
+}
+
+.stepper-outer-wrapper.steps-outside-card.sw-theme-basic>.nav .nav-item:not(:last-child)::after {
+    position: absolute;
+    content: "";
+    top: 50%;
+    transform: translateY(-50%);
+    border-bottom: 0.2rem solid var(--site-border);
+    left: 10.7rem;
+    right: 0;
+    transition: all 0.3s;
+}
+
+.stepper-outer-wrapper.steps-outside-card.sw-theme-basic>.nav .nav-item.prev-active::after {
+    border-color: var(--primary-color);
+}
+
+.stepper-outer-wrapper.steps-outside-card .white-card {
+    margin-bottom: 0;
+    padding: 2.4rem 2.4rem 7.5rem 2.4rem;
+    overflow: hidden;
+}
+
+.stepper-outer-wrapper.steps-outside-card.sw .toolbar {
+    position: absolute;
+    bottom: 0.3rem;
+    left: 0.1rem;
+    border-top: 0.1rem dotted var(--form-field-border-color);
+    width: calc(100% - 0.2rem);
+    display: flex;
+    justify-content: space-between;
+    padding: 1.6rem 2.4rem;
+    z-index: 1;
+}
+
+/* patient stepper css */
+.stepper-outer-wrapper.patients-import-wrapper-outer.sw-theme-basic>.nav {
+    max-width: 37rem;
+    margin: 0 auto 2rem;
+}
+
+.stepper-outer-wrapper.patients-import-wrapper-outer.sw .toolbar {
+    border-top: 0;
+    justify-content: flex-start;
+}
+
+.stepper-outer-wrapper.patients-import-wrapper-outer .sw-btn.sw-btn-prev.disabled {
+    display: inline-block !important;
+}
+
+.stepper-outer-wrapper.patients-import-wrapper-outer.sw .toolbar>.sw-btn.sw-btn-next {
+    margin-left: 1.2rem;
+}
+
+/* dropzone */
+.patients-import-wrapper-outer .upload-container {
+    margin-top: 2rem;
+}
+
+.patients-import-wrapper-outer .drop-zone {
+    border: 0.2rem dashed var(--primary-color);
+    padding: 4.3rem 2.5rem;
+    text-align: center;
+    border-radius: 0.8rem;
+    background: #eff1fd;
+    cursor: pointer;
+}
+
+.patients-import-wrapper-outer .drop-zone.hover {
+    background-color: #e0e7ff;
+}
+
+.patients-import-wrapper-outer .upload-container .image-wrapper {
+    width: 5rem;
+    height: 5rem;
+    margin: 0 auto 0.8rem;
+    border-radius: 50%;
+    background-color: var(--text-white);
+    border: 0.1rem solid #c1c7f5;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.patients-import-wrapper-outer .drop-zone p {
+    margin: 0;
+    font-size: 1.6rem;
+    font-weight: 500;
+    line-height: 1.2;
+}
+
+.patients-import-wrapper-outer .drop-zone p.small-text {
+    font-size: 1.4rem;
+    font-weight: 400;
+    margin-top: 0.5rem;
+}
+
+.patients-import-wrapper-outer .drop-zone p .primary-link {
+    font-size: 1.6rem;
+    font-weight: 500;
+}
+
+.patients-import-wrapper-outer .file-list {
+    margin-top: 2rem;
+}
+
+.patients-import-wrapper-outer .file-item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: #fff;
+    border: 0.1rem solid #eee;
+    padding: 1.2rem;
+    border-radius: 0.6rem;
+    flex-wrap: wrap;
+    position: relative;
+}
+
+.patients-import-wrapper-outer .file-item .close-icon {
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    width: 1rem;
+    height: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+
+.patients-import-wrapper-outer .file-item .close-icon img {
+    width: 100%;
+    height: 100%;
+}
+
+.patients-import-wrapper-outer .file-item span {
+    font-size: 1.4rem;
+    font-weight: 500;
+    color: var(--primary-text-color);
+}
+
+.patients-import-wrapper-outer .file-item-inner {
+    display: flex;
+    align-items: center;
+}
+
+.patients-import-wrapper-outer .file-item-inner .file-name {
+    margin-left: 0.8rem;
+}
+
+.patients-import-wrapper-outer .file-item-inner .file-name .size {
+    color: var(--secondary-text-color);
+    font-size: 1.2rem;
+    font-weight: 500;
+    display: block;
+    margin-top: 0.5rem;
+}
+
+.patients-import-wrapper-outer .delete-btn {
+    background: none;
+    border: none;
+    color: #e11d48;
+    cursor: pointer;
+    font-size: 1.6rem;
+    margin-top: 0;
+}
+
+/* progress bar  */
+.patients-import-wrapper-outer .progressbar-block {
+    flex: 0 0 100%;
+    max-width: 100%;
+    display: flex;
+    align-items: center;
+    gap: 1.2rem;
+    padding: 1.5rem 0 0;
+}
+
+/*  style css */
+.toast-message-wrapper.small-width {
+    max-width: 22.9rem;
+}
+.toast-message-wrapper {
+    max-width: 45.5rem;
+    margin: 0 auto;
+    border-radius: 0.4rem;
+    background-color: var(--green-color);
+    padding: 1.3rem 2rem;
+    position: fixed;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: 5rem;
+    opacity: 0;
+    visibility: hidden;
+    z-index: -9;
+    transition: all 0.3s;
+}
+.toast-message-wrapper.top-pos {
+    top: 5rem;
+    bottom: auto;
+}
+.toast-message-wrapper.error {
+background-color: var(--error-color);
+}
+
+.toast-message-wrapper p {
+    display: flex;
+    align-items: center;
+    font-size: 1.4rem;
+    font-weight: 500;
+    color: var(--text-white);
+}
+
+.toast-message-wrapper p img {
+    margin-right: 0.6rem;
+}
+
+.show-toast.toast-message-wrapper {
+    opacity: 1;
+    visibility: visible;
+    z-index: 1002;
+}
+
+/* match Clinic Management wrapper */
+.math-clinic-management-wrapper ul li {
+    display: flex;
+    align-items: center;
+}
+
+.math-clinic-management-wrapper ul li {
+    padding: 1.3rem 1.6rem;
+}
+
+.math-clinic-management-wrapper ul li.heading {
+    background-color: var(--border-btn-hover);
+    min-width: 46rem;
+}
+
+.math-clinic-management-wrapper ul li:not(.heading) {
+    border-bottom: 0.1rem solid var(--table-border-color);
+}
+
+.math-clinic-management-wrapper ul li p {
+    color: var(--primary-color);
+    font-size: 1.3rem;
+    font-weight: 500;
+}
+
+.math-clinic-management-wrapper ul li.heading p,
+.math-clinic-management-wrapper li.heading .orbit-fields .orbit-fields-inner p {
+    color: var(--secondary-text-color);
+}
+
+.math-clinic-management-wrapper ul li .orbit-fields {
+    flex: 0 0 20%;
+    max-width: 20%;
+    min-width: 11rem;
+}
+
+.math-clinic-management-wrapper ul li .arrow-columns {
+    flex: 0 0 7%;
+    max-width: 7%;
+    text-align: center;
+}
+
+.math-clinic-management-wrapper .orbit-fields .orbit-fields-inner p {
+    color: var(--primary-text-color);
+    font-weight: 500;
+    font-size: 1.3rem;
+}
+
+.math-clinic-management-wrapper .orbit-fields .orbit-fields-inner em {
+    display: flex;
+    flex-shrink: 0;
+}
+
+.math-clinic-management-wrapper ul li .excel-columns {
+    flex: 0 0 calc(100% - 27%);
+    max-width: calc(100% - 27%);
+    padding-left: 2.4rem;
+}
+
+.math-clinic-management-wrapper ul li .excel-columns .form-group {
+    display: flex;
+    align-items: center;
+}
+
+.math-clinic-management-wrapper ul li .excel-columns .form-group .select2.select2-container {
+    max-width: 38.3rem;
+}
+
+.math-clinic-management-wrapper ul li .excel-columns .form-group .select2-container .select2-results__options .select2-results__option {
+    border-bottom: none;
+}
+
+.math-clinic-management-wrapper ul li .excel-columns .form-group em {
+    display: none;
+    margin-left: 2.4rem;
+    min-width: 2rem;
+}
+
+.math-clinic-management-wrapper ul li .excel-columns .form-group.not-completed .not-complete-icon {
+    display: block;
+}
+
+.math-clinic-management-wrapper ul li .excel-columns .form-group.not-completed .select2-container--default .select2-selection--single {
+    border-color: var(--error-color);
+}
+
+.math-clinic-management-wrapper ul li .excel-columns .form-group.completed .complete-icon {
+    display: block;
+}
+
+.math-clinic-management-wrapper ul {
+    overflow-x: auto;
+}
+
+.patients-import-wrapper-outer .progressbar-wrapper {
+    border: 0.1rem solid var(--fileBox-border);
+    border-radius: 0.6rem;
+    padding: 2.2rem;
+}
+
+.patients-import-wrapper-outer .upload-block {
+    border: 0.1rem solid var(--fileBox-border);
+    border-radius: 0.6rem;
+    padding: 1.4rem;
+}
+
+.patients-import-wrapper-outer .progressbar-wrapper p {
+    text-align: center;
+    color: var(--primary-text-color);
+    font-size: 1.3rem;
+    margin-top: 1.4rem;
+}
+
+.progressbar-wrapper .progress-ring {
+    width: 86px;
+    height: 80px;
+    position: relative;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.progressbar-wrapper .progress-ring svg {
+    overflow: inherit;
+}
+
+.progressbar-wrapper .progress-ring circle {
+    fill: none;
+    stroke-width: 9;
+}
+
+.progressbar-wrapper .progress-ring .bg {
+    stroke: #e0e0e0;
+}
+
+.progressbar-wrapper .progress-ring .progress {
+    stroke: var(--green-color);
+    stroke-linecap: round;
+    stroke-dasharray: 0 999;
+    /* will be set by JS */
+    stroke-dashoffset: 0;
+    transition: stroke-dashoffset 1s ease;
+    transform-origin: 75px 75px;
+}
+
+.progressbar-wrapper .progress-ring .percentage {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 14px;
+    color: var(--secondary-text-color);
+    font-weight: 400;
+}
+
+.progressbar-wrapper .slider {
+    margin-top: 30px;
+    display: none;
+    text-align: center;
+}
+
+/* patient-import flow table css */
+.patients-import-wrapper-outer .custom-table-wrapper div.dt-container .dt-layout-row.dt-layout-table {
+    margin-bottom: 2rem;
+}
+
+.patients-import-wrapper-outer .custom-table-wrapper .action-col span {
+    min-width: 1.6rem;
+    width: 1.6rem;
+    height: auto;
+    display: block;
+}
+
+.patients-import-wrapper-outer .custom-table-wrapper .action-col img {
+    height: 100%;
+    width: 100%;
+}
+
+.patients-import-wrapper-outer .upload-block .circle {
+    height: 6rem;
+    width: 6rem;
+    background-color: var(--light-green-bg);
+    border-radius: 50%;
+    margin: 0 auto 0.6rem;
+    position: relative;
+}
+
+.patients-import-wrapper-outer .upload-block .circle .inner-circle {
+    height: 4.8rem;
+    width: 4.8rem;
+    border-radius: 50%;
+    background-color: var(--green-color);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.patients-import-wrapper-outer .upload-block .circle .inner-circle img {
+    width: 1.9rem;
+    height: auto;
+}
+
+.patients-import-wrapper-outer .upload-block p {
+    color: var(--primary-text-color);
+    font-size: 1.3rem;
+    margin-bottom: 2.4rem;
+}
+
+.custom-table.dataTable tbody>tr>td.red-bg {
+    background-color: var(--table-red-bg);
+}
+
+@media (max-width: 991px) {
+    .stepper-outer-wrapper.steps-outside-card .white-card {
+        padding: 1.8rem 1.5rem 7.5rem 1.5rem;
+    }
+
+    .math-clinic-management-wrapper ul li .excel-columns .form-group .select2.select2-container {
+        max-width: 30rem;
+        min-width: 30rem;
+    }
+
+    .math-clinic-management-wrapper ul li .excel-columns .form-group em {
+        margin-left: 1.2rem;
+    }
+
+    .math-clinic-management-wrapper ul li .excel-columns {
+        padding-left: 2rem;
+    }
+}
+
+@media (max-width: 574px) {
+    .stepper-outer-wrapper.sw.sw-theme-basic>.nav .nav-item:not(:last-child) {
+        flex: inherit;
+    }
+
+    .stepper-outer-wrapper.sw.sw-theme-basic>.nav .nav-item:not(:last-child)::after {
+        left: 4.7rem;
+        top: 3.4rem;
+    }
+
+    .math-clinic-management-wrapper ul li .excel-columns .form-group .select2.select2-container {
+        max-width: 25rem;
+        min-width: 25rem;
+    }
+}

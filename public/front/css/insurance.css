@@ -1,0 +1,18 @@
+
+.custom-table.dataTable .tooltip-wrap { display: flex;align-items: center;}
+.custom-table.dataTable .tooltip-wrap .info-tooltip { margin-left: 1rem;}
+/* template page */
+.insurance-page-wrapper h2{font-size: 1.6rem;font-weight: 600;letter-spacing: -0.008rem;margin-bottom: 1.7rem;}
+.insurance-page-wrapper { margin-bottom: 0;}
+.insurance-page-wrapper table.dataTable { min-width: 65rem;}
+.insurance-page-wrapper .custom-table.dataTable > thead > tr > th:first-child { border-radius: 0.4rem 0 0 0.4rem;}
+.insurance-page-wrapper .custom-table.dataTable > thead > tr > th:last-child { border-radius: 0 0.4rem 0.4rem 0;}
+.insurance-page-wrapper .custom-table.dataTable > tbody > tr > td { padding: 1rem;height: 6rem;vertical-align: middle;}
+.insurance-page-wrapper .custom-table.dataTable > thead > tr > th { padding: 1.55rem 1rem;}
+.insurance-page-wrapper .info-tooltip .tooltip-icon { width: 1.5rem;}
+.insurance-page-wrapper .form-control { height: 4rem;line-height: 4rem;}
+.insurance-page-wrapper .action-col { width: 7.8rem;}
+.insurance-page-wrapper .insurance-wrap:not(:last-child) { margin-bottom: 2.4rem;}
+.insurance-page-wrapper .group-change-link { cursor: pointer;}
+.insurance-page-wrapper table.dataTable tr:last-child .action-col .threedot-menu-wrapper .threedot-menu { top: auto; bottom: calc(100% - 2.3rem);/* bottom: calc(100% + 0.6rem); */}
+.insurance-page-wrapper table.dataTable tr .action-col .threedot-menu-wrapper .threedot-menu{top: calc(100% - 2.1rem);}

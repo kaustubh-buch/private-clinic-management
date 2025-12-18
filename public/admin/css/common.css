@@ -1,0 +1,96 @@
+.logo {
+    width: 100%;
+}
+
+.brand-link {
+    background-color: #fff;
+}
+
+.loder {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 9999;
+    background-color: rgba(0, 0, 0, 0.4);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.loder img {
+    height: 100px;
+    width: 100px;
+}
+
+#show-insurance-form {
+        float: right;
+    margin-top: 11px;
+}
+
+.doctor-action {
+    display: flex !important;
+    gap: 3px !important;
+    justify-content: center;
+}
+
+.doctor-action  a{
+    height: 31px;
+    display: flex;
+    align-items: center;
+}
+
+.invalid-error {
+    color: #dc3545; /* Bootstrap red */
+    display: block;
+    margin-top: 0.25rem;
+    font-size: 0.875em;
+}
+
+.error {
+    color: red;
+    display: block;
+    font-size: 0.875rem;
+    margin-top: 0.25rem;
+}
+
+
+.dataTables_wrapper .dataTables_length select {
+    width: 50% !important
+}
+
+.date-picker {
+    display: flex;
+    flex-direction: column-reverse;
+}
+.square-image-container {
+    width: 200px;
+    aspect-ratio: 1;
+    text-align: center;
+  }
+
+  .square-image-container img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    border: 1px solid #ddd; /* optional */
+  }
+
+.image-open {
+    cursor: pointer;
+    transition: transform 0.2s ease-in-out;
+}
+
+.clinic-show-tabs .usage-tab .small-box .inner {
+    padding-right: 100px;
+}
+
+.clinic-show-tabs .small-box {
+    min-height: 135px;
+}
+
+.clinic-show-tabs .small-box .inner p {
+    white-space: normal;
+    word-break: break-word;
+}

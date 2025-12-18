@@ -1,0 +1,162 @@
+/* settings -> activity page css start */
+.expandable-table.activity-table .custom-child-row .custom-child-row{
+    background-color: var(--text-white);
+}
+.activity-table .overdue-content-wrapper .overdue-listing-wrapper{
+    display: flex;
+    gap: 5.2rem;
+}
+.activity-table .overdue-content-wrapper .overdue-listing-wrapper .listing-wrapper p{
+    color: var(--secondary-text-color);
+    margin-bottom: 1rem;
+}
+.activity-table .overdue-content-wrapper .overdue-listing-wrapper .listing-wrapper+.listing-wrapper{
+    margin-top: 0;
+}
+.activity-page-wrapper .custom-table-wrapper div.dt-container div.dt-layout-table{
+    margin-bottom: 2rem;
+}
+.activity-page-wrapper .custom-table.dataTable > tbody > tr > td{
+    padding: 1.6rem;
+}
+.activity-page-wrapper .expandable-table .custom-child-row .custom-child-row {
+    padding: 3.2rem 2rem 3.2rem 8.2rem !important;
+}
+/* .activity-page-wrapper .expandable-table .custom-child-row .custom-child-row .details-wrapper{
+    padding: 3.2rem 2rem 3.2rem 8.2rem;
+} */
+.activity-page-wrapper .listing-wrapper li+li {
+    margin-top: 1.4rem;
+}
+.activity-page-wrapper table.dataTable tr:last-child .action-col .threedot-menu-wrapper .threedot-menu{
+    top: auto;
+    bottom: calc(100% + 0.6rem);
+}
+/* settings -> activity page css end */
+.badge-wrapper .badge{
+    padding: 0.5rem 1rem 0.6rem;
+    background-color: var(--orange-badge-bg);
+    border-radius: 5rem;
+    display: inline-flex;
+    align-items: center;
+    gap: 0.4rem;
+}
+.badge-wrapper .badge .badge-dot{
+    height: 0.8rem;
+    width: 0.8rem;
+    border-radius: 50%;
+    background-color: var(--orange-badge);
+}
+.badge-wrapper .badge .badge-title{
+    font-size: 1.2rem;
+    line-height: 1.4;
+}
+.badge-wrapper .badge.green-badge{
+    background-color: var(--green-badge-bg);
+}
+.badge-wrapper .badge.green-badge .badge-dot{
+    background-color: var(--green-color);
+}
+.badge-wrapper .badge.red-badge{
+    background-color: var(--red-badge-bg);
+}
+.badge-wrapper .badge.red-badge .badge-dot{
+    background-color: var(--error-color);
+}
+.badge-wrapper .badge.blue-badge{
+    background-color: var(--blue-badge-bg);
+}
+.badge-wrapper .badge.blue-badge .badge-dot{
+    background-color: var(--primary-color);
+}
+.status-dot{
+    height: 0.8rem;
+    width: 0.8rem;
+    border-radius: 50%;
+    background-color: var(--orange-badge);
+}
+.status-dot.green-dot{
+    background-color: var(--green-color);
+}
+.status-dot.red-dot{
+    background-color: var(--error-color);
+}
+.status-dot.blue-dot{
+    background-color: var(--primary-color);
+}
+.status-dot.dark-green-dot{
+    background-color: var(--status-green);
+}
+.status-dot.yellow-dot{
+    background-color: var(--status-yellow);
+}
+.status-info .status{
+    margin-left: 0.6rem;
+}
+/* activity log css start */
+.activity-log-page-wrapper{
+    overflow: hidden;
+}
+
+.activity-log-page-wrapper .action-col .threedot-menu-wrapper{ 
+    width:0.6rem;
+}
+.activity-log-page-wrapper .custom-table-wrapper div.dt-container div.dt-layout-table{
+    margin-bottom: 2rem;
+}
+.activity-log-page-wrapper .date-picker-outer-wrapper{
+    display: flex;
+    align-items: center;
+    gap: 0.8rem;
+}
+.activity-log-page-wrapper .datepicker-wrapper.has-range-picker::before{
+    top: 1.4rem;
+    left: 1.1rem;
+}
+.activity-log-page-wrapper .datepicker-wrapper.has-range-picker::after{
+    top: 1.7rem;
+    right: 1.5rem;
+}
+.activity-log-page-wrapper .datepicker-wrapper.has-range-picker label{
+    display: none;
+}
+.activity-log-page-wrapper .title-wrapper h2{
+    font-size: 1.6rem;
+    font-weight: 600;
+}
+.activity-log-page-wrapper .custom-table.dataTable > tbody > tr > td {
+    padding: 1.6rem;
+}
+.activity-log-page-wrapper table.dataTable tr:last-child .action-col .threedot-menu-wrapper .threedot-menu,
+.activity-log-page-wrapper table.dataTable tr:nth-last-child(2) .action-col .threedot-menu-wrapper .threedot-menu {
+    top: auto;bottom: calc(100% + 0.6rem);
+}
+
+/* activity log css end */
+@media(max-width: 767px){
+    .activity-log-page-wrapper .datepicker-wrapper.has-range-picker::after {
+        top: 1.4rem;
+    }
+    .activity-log-page-wrapper .datepicker-wrapper.has-range-picker::before {
+        top: 1.1rem;
+    }
+    .activity-page-wrapper .expandable-table .custom-child-row .custom-child-row {
+        padding: 1.2rem 2rem 2rem 3.2rem !important;
+    }
+}
+@media(max-width: 426px){
+    .activity-log-page-wrapper .title-wrapper{
+        position: relative;
+    }
+    .activity-log-page-wrapper .title-wrapper .export-btn-wrapper{
+        position: absolute;
+        top: 0;
+        right: 0;
+    }
+    .activity-log-page-wrapper .title-wrapper h2{
+        margin-top: 1rem;
+    }
+    .activity-log-page-wrapper .date-picker-outer-wrapper{
+        padding-top: 1rem;
+    }
+}

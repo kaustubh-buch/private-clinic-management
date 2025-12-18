@@ -1,0 +1,451 @@
+.sw-btn.sw-btn-prev.disabled {
+    display: none !important;
+}
+.sw .toolbar>.sw-btn.sw-btn-next{
+    margin-left: auto;
+} 
+#send-page-stepper.send-stepper-outer .nav {
+    max-width: 68rem;
+    margin: 0 auto 1.9rem;
+    cursor: not-allowed !important;
+}
+#send-page-stepper.send-stepper-outer .nav li a{
+    cursor:not-allowed !important;
+}
+.send-stepper-outer .white-card {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.send-stepper-outer .white-card .content-outer-wrapper{
+    padding-bottom: 2rem;
+}
+.send-stepper-outer .white-card .title-block {
+    margin-bottom: 1.6rem;
+}
+.tooltip-outer-wrapper{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0.5rem;
+}
+.send-stepper-outer .step1 .white-card .form-block {
+    max-width: 100%;
+    margin: 0 auto;
+}
+.send-stepper-outer .step1 .white-card .form-block form{
+    max-width: 44rem;
+    margin: 0 auto 1.6rem;
+}
+.send-stepper-outer .white-card .form-block .h1 {
+    font-size: 2.4rem;
+}
+.send-stepper-outer .form-block .promotional-block,
+.send-stepper-outer .form-block .overdue-recalls-block{
+    max-width: 34.3rem;
+    margin-left: auto;
+}
+.send-stepper-outer .step1 .form-block .content-wrapper .error-message.has-left-spacing{
+    padding-left: 9.6rem;
+    white-space: nowrap;
+}
+.send-stepper-outer form {
+    margin-bottom: 1.6rem;
+}
+.site-wrapper,.main-content,.page-wrapper,.page-inner-wrapper{
+    height: 100%;
+}
+.send-stepper-outer .tab-content {
+    min-height: calc(100% - 6.8rem) !important;    
+}
+#send-stepper{
+    min-height: 100%;    
+}
+.send-stepper-outer .promotional-block-inner,
+.send-stepper-outer .overdue-sub-checkbox-wrapper {
+    margin-left: 2.4rem;
+    opacity: 0;
+    visibility: hidden;
+    transition: all 0.3s;
+    transform-origin: center;
+    height: 0;
+}
+
+.send-stepper-outer .promotional-block-inner.show-overdue,
+.send-stepper-outer .overdue-sub-checkbox-wrapper.show-overdue {
+    padding-top: 1.5rem;
+    opacity: 1;
+    visibility: visible;
+    height: 100%;
+}
+.send-stepper-outer .overdue-sub-checkbox-wrapper .checkbox-control+.checkbox-control{
+    margin-top: 1.5rem;
+}
+.send-stepper-outer .overdue-sub-checkbox-wrapper .tooltip-outer-wrapper{
+    justify-content: flex-start;
+}
+.send-stepper-outer .overdue-sub-checkbox-wrapper .tooltip-outer-wrapper p{
+    color: var(--secondary-text-color);
+    font-size: 1.3rem;
+}
+.send-stepper-outer .button-wrapper {
+    margin-top: 1.5rem;
+}
+.sw .toolbar>.sw-btn{
+    width: auto;
+    margin: 0;
+    padding: 0 1.6rem;
+    border-radius: 0.4rem;
+}
+.sw .toolbar>.sw-btn.outline-btn{
+    border: 1px solid var(--form-field-border-color);
+    background-color: transparent;
+    color: var(--primary-text-color);
+    font-family: Inter, sans-serif;
+}
+.sw .toolbar>.sw-btn.primary-btn{
+    color: var(--text-white) !important;
+    background-color: var(--primary-color) !important;
+    border: none;
+}
+.sw .toolbar>.sw-btn.outline-btn:hover,
+.sw .toolbar>.sw-btn.outline-btn:focus,
+.sw .toolbar>.sw-btn.primary-btn:hover,
+.sw .toolbar>.sw-btn.primary-btn:focus{
+    background-color:var(--primary-btn-hover) !important;    
+}
+.sw .toolbar>.sw-btn.outline-btn:hover,
+.sw .toolbar>.sw-btn.outline-btn:focus{
+    color: var(--text-white);
+    border-color: var(--primary-color);
+}
+
+/* step 2 css start */
+.send-stepper-outer .white-card.sms-duration-wrapper form {
+    margin: 0;
+}
+
+.send-stepper-outer .white-card.sms-duration-wrapper .form-block {
+    max-width: 100%;
+}
+
+.send-stepper-outer .sms-duration-wrapper .content-wrapper {
+    max-width: 43rem;
+    margin: 0 auto;
+}
+.send-stepper-outer .sms-info-block .tooltip-outer-wrapper{
+    display: block;
+    color: var(--secondary-text-color);
+    margin-top: 0.5rem;
+}
+
+.send-stepper-outer .content-wrapper .sms-usage-info .info .info-tooltip{
+    display: inline-block;
+    position: relative;
+    top: 0.3rem;
+}
+.send-stepper-outer .sms-info-block .tooltip-outer-wrapper .info-tooltip{
+    top: 0.1rem;
+    display: inline-block;
+    position: relative;
+}
+.send-stepper-outer .content-wrapper .sms-usage-info .info,
+.send-stepper-outer .sms-duration-wrapper .content-wrapper p {
+    color: var(--secondary-text-color);
+    font-size: 1.3rem;
+}
+
+.send-stepper-outer .sms-duration-wrapper .content-wrapper .sms-usage-info{
+    margin-top: 0.5rem;
+}
+.send-stepper-outer .sms-duration-wrapper .content-wrapper .checkbox-control {
+    margin-top: 1.3rem;
+}
+
+.send-stepper-outer .sms-duration-wrapper .content-wrapper .form-group .form-control {
+    width: 35.8rem;
+}
+
+.send-stepper-outer .sms-duration-wrapper .sms-outer-wrapper {
+    max-width: 24rem;
+    margin: 0 auto;
+}
+
+.send-stepper-outer .sms-duration-wrapper .sms-outer-wrapper .sms-info-wrapper {
+    display: flex;
+    align-items: center;
+}
+
+.send-stepper-outer .sms-duration-wrapper .sms-outer-wrapper .sms-info-wrapper .checkbox-control {
+    margin-right: 0.8rem;
+    flex: 1;
+    margin-top: 0;
+}
+
+.send-stepper-outer .sms-duration-wrapper .sms-outer-wrapper .sms-info-wrapper .form-group-wrapper {
+    max-width: 6.6rem;
+    flex: 0 0 6.6rem;
+}
+
+.send-stepper-outer .sms-duration-wrapper .sms-outer-wrapper .sms-info-wrapper .counter-wrapper {
+    display: flex;
+    border: 0.1rem solid var(--site-border);
+    padding: 0.5rem 0.8rem;
+    border-radius: 0.4rem;
+    align-items: center;
+}
+
+.send-stepper-outer .sms-duration-wrapper .sms-outer-wrapper .sms-info-wrapper .form-group {
+    display: flex;
+    align-items: center;
+}
+
+.send-stepper-outer .sms-duration-wrapper .sms-outer-wrapper .sms-info-wrapper .form-group .form-control {
+    height: auto;
+    border: none;
+    width: 1.8rem;
+    font-size: 1.3rem;
+    font-weight: 500;
+    text-align: right;
+    padding: 0;
+    line-height: 1.23;
+}
+.send-stepper-outer .checkbox-control label{
+    font-size: 1.6rem;
+    color: var(--primary-text-color);
+}
+.send-stepper-outer .checkbox-control label::after, 
+.send-stepper-outer .checkbox-control label::before {
+    top: 0.4rem;
+}
+.send-stepper-outer .sms-duration-wrapper .sms-outer-wrapper .sms-info-wrapper .counter-wrapper span {
+    font-size: 1.3rem;
+    font-weight: 500;
+    margin-left: 0.2rem;
+    line-height: 1.23;
+    display: flex;
+    align-items: center;
+}
+
+.send-stepper-outer .sms-duration-wrapper .sms-outer-wrapper .sms-info-wrapper+.sms-info-wrapper {
+    margin-top: 2rem;
+}
+.send-stepper-outer .sms-duration-wrapper .sms-info-block{
+    max-width: 28rem;
+    margin: 3.2rem auto 0;
+    text-align: center;    
+}
+.send-stepper-outer .sms-duration-wrapper .sms-info-block p{
+    color: var(--secondary-text-color);
+    line-height: 1.4;
+}
+.send-stepper-outer .sms-duration-wrapper .sms-info-block p span{
+    color: var(--primary-text-color);
+}
+.send-stepper-outer .white-card .title-block h2 em{
+    position: relative;
+    top: -0.2rem;
+}
+/* step 2 css end */
+.stepper-error-note{
+    max-width: 100%;
+    margin: 2rem auto 0;
+    text-align: center;
+    position: relative;
+    bottom: -6rem;
+    padding: 0 6rem;
+    z-index: 1;
+}
+.stepper-error-note .error-message{
+    color: var(--error-color) !important;
+    font-size: 1.2rem !important;
+}
+.stepper-error-note p, 
+.stepper-error-note a{
+    font-size: 1.3rem;
+    font-weight: 500;
+    letter-spacing: -0.008rem;
+    color: var(--primary-color);
+}
+.send-stepper-outer .sms-duration-wrapper .content-wrapper .sms-usage-info{
+    justify-content: flex-start;
+}
+
+/* step3 css start */
+.send-summary-wrapper .form-block{
+    text-align: center;
+    max-width: 100%;
+}
+.send-summary-wrapper .form-block .content-wrapper .bold-text{
+    margin-bottom: 1.6rem;
+}
+.send-summary-wrapper .form-block .content-wrapper .btn-outer-wrapper{
+    margin-top: 3.2rem;
+    display: flex;
+    justify-content: center;
+    gap: 1.2rem;
+}
+.send-summary-wrapper .form-block .content-wrapper .btn-outer-wrapper button{
+    margin-top: 0;
+}
+.send-summary-wrapper .form-block .content-wrapper .content-inner-wrapper{
+    max-width: 27.2rem;
+    margin: 0 auto;
+    text-align: left;
+}
+.send-stepper-outer .template-count-wrapper{
+    margin-top: 1.6rem;
+}
+.stepper-outer-wrapper.steps-outside-card .white-card.template-card{
+    padding: 2.4rem;
+}
+.send-stepper-outer .template-count-wrapper li{
+    color: rgba(33,37,41, 0.8);
+    font-size: 1.5rem;
+}
+.placeholder-insert{
+    font-weight: 600;
+    display: inline-block;
+    white-space: nowrap;
+}
+.send-stepper-outer .template-count-wrapper li+li{
+    margin-left: 3.2rem;
+    position: relative;    
+}
+.send-stepper-outer .template-count-wrapper li+li::before{
+    position: absolute;
+    content: '';
+    left: -1.6rem;
+    top: 0;
+    background-color: #D2D6D9;
+    height: 2rem;
+    width: 0.2rem;
+    border-radius: 2rem;
+}
+.send-stepper-outer .step1 .template-preview-box{
+    max-width: 78.4rem;
+    margin: 0 auto 1.6rem;
+    width: 100%;
+}
+.send-stepper-outer .step1 .template-preview-box .template-message-div{
+    font-size: 1.5rem;
+    color: rgba(33,37,41, 0.8);
+}
+.listing-wrapper+.listing-wrapper{
+    margin-top: 2rem;
+}
+.listing-wrapper li{
+    position: relative;
+    padding-left: 2rem;
+}
+.listing-wrapper li+li{
+    margin-top: 1rem;
+}
+.listing-wrapper li::before{
+    position: absolute;
+    content: '';
+    left: 0.5rem;
+    height: 0.5rem;
+    width: 0.5rem;
+    background-color: var(--primary-text-color);
+    border-radius: 50%;
+    top: 0.7rem;
+}
+#promotional-step2 .checkbox-control label{
+    font-size: 1.3rem;
+    color: var(--secondary-text-color);
+    white-space: nowrap;
+}
+#templatePreviewBox .info-tooltip{
+    display: flex;
+    align-items: center;
+    gap: 0.4rem;
+}
+/* #templatePreviewBox .info-tooltip .tooltip-icon{
+    position: relative;
+    top: 0.1rem;
+    width: 1.6rem;
+} */
+/* step3 css end */
+@media(max-width: 1680px){
+    .stepper-error-note{
+        padding: 0 1rem;
+        max-width: 100%;
+    }
+}
+@media(max-width: 1199px){
+    .stepper-error-note{
+        padding: 0 8rem;
+    }
+}
+@media(max-width: 767px){
+    .stepper-error-note{
+        padding: 0 0 7rem 1rem;
+    }
+    .send-stepper-outer .white-card .form-block .h1 {
+        font-size: 2rem;
+    }
+    .send-stepper-outer form{
+        margin: 0 0 1rem 2rem;
+    }
+    .send-stepper-outer .checkbox-control label::after, .send-stepper-outer .checkbox-control label::before {
+        top: 0.2rem;
+    }
+    .send-stepper-outer .checkbox-control label {
+        font-size: 1.4rem;
+    }
+    .send-stepper-outer .overdue-sub-checkbox-wrapper .checkbox-control+.checkbox-control {
+        margin-top: 1.2rem;
+    }
+    .send-stepper-outer .step1 .form-block .content-wrapper .error-message.has-left-spacing{
+        padding-left: 0;
+        white-space: normal;
+        text-align: center;
+    }
+    .send-stepper-outer .step1 .white-card .form-block{
+        max-width: 100%;
+    }
+    .send-stepper-outer .form-block .promotional-block, 
+    .send-stepper-outer .form-block .overdue-recalls-block {
+        max-width: 44.3rem;
+        /* max-width: 100%; */
+        /* padding-left: 18rem; */
+        margin-left: auto;
+    }
+    .stepper-outer-wrapper.steps-outside-card .white-card.template-card{
+        padding: 1.5rem;
+    }
+    #promotional-step2 .checkbox-control label{
+        white-space: normal;
+    }
+}
+@media(max-width: 574px){
+    .send-stepper-outer .sms-duration-wrapper .content-wrapper{
+        max-width: 100%;
+    }
+    .send-stepper-outer .sms-duration-wrapper .content-wrapper .form-group .form-control {
+        width: 100%;
+    }
+    .send-stepper-outer form {
+        margin: 0 0 1rem 1rem;
+    }
+}
+@media (max-width: 426px) {
+    .send-summary-wrapper .form-block .content-wrapper .btn-outer-wrapper{
+        flex-direction: column;
+    }
+     .send-stepper-outer .template-count-wrapper{
+        flex-direction: column;
+    }
+    .send-stepper-outer .template-count-wrapper li+li{
+        margin-left: 0;
+    }
+    .send-stepper-outer .template-count-wrapper li+li::before{
+        display: none;
+    }
+}
+@media (max-width: 374px) {
+    .send-stepper-outer form {
+        margin: 0 0 1rem 0rem;
+    }   
+}

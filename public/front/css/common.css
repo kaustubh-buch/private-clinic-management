@@ -1,0 +1,421 @@
+.error.invalid-error {
+    color: var(--error-color);
+    font-size: 80%;
+    margin-top: 0.25rem;
+}
+.dt-search {
+    display: none;
+}
+
+/*loader css */
+.loader-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(255, 255, 255, 0.6);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 9999;
+}
+
+.loader {
+    border: 4px solid #f3f3f3;
+    border-top: 4px solid #3498db;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    animation: spin 1s linear infinite;
+    margin-top: 10px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.index-loader-overlay {
+    position: absolute !important;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(255, 255, 255, 0.6);
+    justify-content: center;
+    align-items: center;
+    z-index: 9999;
+    display: none;
+}
+
+.index-loader {
+    border: 4px solid #f3f3f3;
+    border-top: 4px solid #3498db;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    animation: spin 1s linear infinite;
+    margin-top: 10px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.d-none {
+    display: none !important;
+}
+
+.forget-link-position {
+    position: relative;
+    float: right;
+}
+
+.no-chats-found{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.insurance-table.dataTable tbody td.dt-empty {
+    padding: 80px 20px !important;
+    text-align: center;
+    vertical-align: middle;
+}
+
+.insurance-table .no-data-message {
+    display: inline-block;
+    text-align: center;
+    line-height: 1.6;
+    font-size: 14px;
+    color: #333;
+}
+
+.auth-right .otp-error-message{
+    margin-left: 25px;
+}
+
+.auth-right .otp-wrapper + .error-message {
+    margin-left: 25px;
+}
+
+button:disabled,
+button[disabled] {
+    cursor: not-allowed !important;
+    opacity: 0.7;
+    pointer-events: none;
+}
+
+@keyframes spin {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+.tampate-popup .message-wrapper .message-block {
+    font-size: 1.3rem;
+    line-height: 1.4;
+    color: var(--secondary-text-color) !important;
+}
+
+.template-custom-field {
+    color: var(--primary-color) !important;
+}
+
+.text-danger {
+    color: var(--error-color) !important;
+    font-size: 12px;
+}
+
+/*emoji picker styles*/
+.emoji-picker-modal {
+    position: absolute;
+    z-index: 1056;
+    background: #fff;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    padding: 10px;
+    max-width: 320px;
+    max-height: 300px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.emoji-picker-scroll {
+    overflow-y: auto;
+    max-height: 260px;
+}
+
+.emoji-grp {
+    margin-bottom: 12px;
+}
+
+.emoji-grp-title {
+    font-size: 14px;
+    font-weight: bold;
+    margin-bottom: 6px;
+    color: #555;
+}
+
+.emoji-buttons {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 6px;
+}
+
+.emoji-buttons button {
+    background: transparent;
+    border: none;
+    font-size: 22px;
+    cursor: pointer;
+    line-height: 1;
+}
+
+.emoji-buttons button:hover {
+    transform: scale(1.2);
+}
+li.active a.nav-link {
+    color: #465DFF !important;
+}
+
+.btn-group {
+    display: flex;
+    gap: 10px;
+    margin-top: 20px;
+}
+
+.btn-group .primary-btn,.btn-group .outline-btn {
+    display: inline-block;
+    width: auto;
+}
+
+.stepper-outer-wrapper.steps-outside-card.patients-import-wrapper-outer .white-card {
+    padding-bottom: 2.4rem;
+}
+
+button:disabled,
+button[disabled] {
+    cursor: not-allowed !important;
+    opacity: 0.7;
+    pointer-events: none;
+
+}
+
+.editable-cell {
+    cursor: pointer;
+}
+
+.cell-input {
+    width: 100%;
+    padding: 2px;
+    font-size: inherit;
+}
+
+.mark-as-completed-step {
+    background-color : var(--green-color) !important;
+    border-color: var(--green-color) !important;
+}
+.error-msg{
+    color:red
+}
+#message-error{
+    color:red
+}
+
+.campaign-error-note-step-1{
+    z-index: 2;
+}
+
+.justify-content-evenly {
+    justify-content: space-evenly;
+}
+
+.float-right {
+    float: right;
+}
+
+.pointer-events-none {
+    pointer-events: none;
+}
+
+.activity-log-export-disabled {
+    cursor: no-drop !important;
+    opacity: 0.5 !important;
+    pointer-events: none !important;
+}
+
+.promotional-campaign-message-wrapper .white-card{
+    width: 100%;
+    max-width: 76.1rem;
+    margin-left: 0;
+}
+.promotional-campaign-message-wrapper .template-title p{
+    color: var(--secondary-text-color);
+    font-size: 1.3rem;
+}
+.promotional-campaign-message-wrapper .template-title p span{
+    font-weight: 700;
+    color: var(--secondary-text-color);
+}
+.promotional-campaign-message-wrapper .template-count-wrapper li{
+    color: rgba(33, 37, 41, 0.8);
+    font-size: 1.5rem;
+}
+.promotional-campaign-message-wrapper .template-count-wrapper li+li {
+    margin-left: 3.2rem;
+    position: relative;
+}
+.promotional-campaign-message-wrapper .template-count-wrapper li+li::before {
+    position: absolute;
+    content: '';
+    left: -1.6rem;
+    top: -0.4rem;
+    background-color: #D2D6D9;
+    height: 2rem;
+    width: 0.2rem;
+    border-radius: 2rem;
+}
+.promotional-campaign-message-wrapper .opt-out-text{
+    color: rgba(33, 37, 41, 0.8) !important;
+    font-weight: 500;
+}
+/* Typeahead dropdown container */
+ul.typeahead.dropdown-menu {
+    background-color: #fff;
+    border: 1px solid #dee2e6;
+    border-radius: 0.5rem;
+    padding: 0.25rem 0;
+    margin-top: 0.25rem;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+    max-height: 250px;
+    overflow-y: auto;
+    z-index: 1050;
+    position: absolute !important;
+    width: 100%;
+}
+
+/* Suggestion list items */
+ul.typeahead.dropdown-menu li a.dropdown-item {
+    padding: 10px 16px;
+    font-size: 15px;
+    color: #212529;
+    line-height: 1.4;
+    transition: background-color 0.15s;
+    border-radius: 0;
+    width: 100%;
+}
+
+/* Active item (hover or arrow-key focus) */
+ul.typeahead.dropdown-menu li.active a.dropdown-item,
+ul.typeahead.dropdown-menu li a.dropdown-item:hover {
+    background-color: #f0f4f8;
+    color: #000;
+}
+
+/* Highlighted text inside suggestions */
+ul.typeahead.dropdown-menu strong {
+    font-weight: 600;
+    color: #0d6efd; /* Bootstrap 5 primary blue */
+}
+
+.sidebar-outer-wrapper .sidebar-nav-wrapper ul li .submenu li.disabled a,
+.sidebar-outer-wrapper .sidebar-nav-wrapper > ul.sidebar-menu-wrapper > li.disabled > a {
+    cursor: no-drop;
+    pointer-events: none;
+}
+
+.patients-import-wrapper-outer button {
+    user-select: none;
+}
+
+
+
+.datepicker-wrapper:not(.has-range-picker)::after {
+    pointer-events: none;
+}
+
+.emoji-btn {
+    border: none;
+    background: transparent;
+}
+
+.ql-container {
+    border: none !important;
+}
+
+.emoji-picker-modal {
+    background: transparent;
+    box-shadow: none;
+    border: none;
+
+}
+
+
+.message-wrapper {
+    padding-top: 0px !important;
+    padding-left: 0px !important;
+}
+
+.custom-modal .message-wrapper .message-block p + p {
+    margin-top: 0px;
+}
+
+.ql-editor.ql-blank::before {
+    font-style: normal !important;
+}
+
+.custom-modal .message-wrapper .message-block p {
+    line-height: 1.4;
+}
+
+.custom-modal .message-wrapper .message-block p span {
+    color: unset;
+}
+
+.template-message-div {
+    line-height: 1.4;
+    white-space: normal;
+    word-break: break-word;
+}
+
+.opt-out-text {
+    color: var(--primary-text-color) !important;
+}
+
+.sw-theme-basic>.nav .nav-link.done {
+    cursor: not-allowed;
+}
+
+.other-software-span {
+    color: var(--secondary-text-color);
+}
+
+.chatbox-message-content-inner .message {
+    white-space: normal;
+    word-break: break-word;
+}
+
+.inbox-outer .person-birthdate {
+    text-overflow: ellipsis;
+    overflow: hidden;
+    max-width: 22rem;
+}
+
+.gray-btn {
+    opacity: 0.5;
+    background-color: var(--lightgray-bg) !important;
+    cursor: not-allowed;
+    pointer-events: none;
+}
+
+.dt-container .listing-wrapper li::before {
+    top: 0.4rem;
+}
+body:has(.header-top-without-content) .sidebar-outer-wrapper{top: 9.48rem;}
+
+.text-pre-wrap {
+    white-space: pre-wrap !important;
+}
+
+body .flatpickr-calendar .flatpickr-day.nextMonthDay, body .flatpickr-calendar .flatpickr-day.prevMonthDay {
+    color: #747985;
+}

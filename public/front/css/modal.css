@@ -1,0 +1,432 @@
+.modal-open { overflow: hidden; }
+.custom-modal.small-modal .modal-content-wrapper .modal-dialog{max-width: 46rem;}
+.custom-modal.medium-modal .modal-content-wrapper .modal-dialog{max-width: 48rem;}
+.custom-modal.large-modal .modal-content-wrapper .modal-dialog{max-width: 64.2rem;}
+.custom-modal.large-modal .modal-dialog .modal-inner-content { padding: 2.8rem 2.4rem 1.6rem;}
+.custom-modal .modal-footer-block.full-border .button-wrapper { margin: 2.4rem -2.4rem 0; padding: 1.6rem 2.4rem 0;}
+.custom-modal { display: none; opacity: 0; transition: opacity .15s linear; position: fixed; top: 0; left: 0; right: 0; bottom: 0; z-index: 1000;}
+.custom-modal .modal-content-wrapper .modal-dialog {max-width: 58rem; margin: 0.5rem auto;z-index: 1000; position: relative; transition: -webkit-transform .3s ease-out; transition: transform .3s ease-out; -webkit-transform: translate(0, -2.5rem); transform: translate(0, -2.5rem); display: flex;align-items: center;justify-content: center;min-height: calc(100% - (.5rem * 2));padding: 0 3rem;}
+.modal-open .custom-modal .modal-backdrop { opacity: 0.5; }
+.custom-modal.visible { display: block; }
+.custom-modal.visible.fadein { opacity: 1; }
+.custom-modal.visible.fadein .modal-content-wrapper .modal-dialog { transform: translate(0); }
+.custom-modal .modal-backdrop { background: #000; position: fixed; top: 0; bottom: 0; left: 0; right: 0; z-index: 999; cursor: pointer; opacity: 0; transition: opacity .3s linear; }
+.custom-modal .modal-close { position: absolute; top: 2.2rem; right: 2.3rem; cursor: pointer; transition: all 0.3s; opacity: 1;text-align:center;}
+.custom-modal .modal-content-wrapper { position: fixed; left: 0; top: 0; z-index: 1000; right: 0; overflow: auto; height: 100%; }
+.custom-modal .modal-close img { max-width: 100%;}
+.custom-modal .modal-dialog .modal-inner-content{padding: 3.2rem;background: #fff; position: relative; border-radius: 0.8rem;width: 100%;}
+.btn-wrapper{display: flex;justify-content: center;}
+.btn-wrapper a{display: block;height: 4rem;background-color: #ddd;line-height: 4rem;color: #000;padding: 0 2rem;border-radius: 3rem;}
+.btn-wrapper a+a{margin-left: 2rem;}
+.custom-modal .modal-dialog .modal-inner-content .tick-image-wrapper{border-radius: 50%;background-color: var(--success-payment-bg);height: 5.8rem;width: 5.8rem;display: flex;align-items: center;justify-content: center;margin: 0 auto 1.6rem;}
+.custom-modal .modal-dialog .modal-inner-content .tick-image-wrapper.purple-bg{background-color: var(--purple-bg);}
+.custom-modal .modal-dialog .modal-inner-content .tick-image-wrapper.yellow-bg{background-color: var(--yellow-bg);}
+.custom-modal .modal-dialog .modal-inner-content .tick-image-wrapper.red-bg{background-color: var(--red-bg);}
+.custom-modal.reset-password-modal .modal-dialog .modal-inner-content,
+.custom-modal.account-review-modal .modal-dialog .modal-inner-content,
+.custom-modal.center-modal .modal-dialog .modal-inner-content,
+.custom-modal.secure-your-accout-modal .modal-dialog .modal-inner-content .title-wrapper{text-align: center;}
+.custom-modal.reset-password-modal .modal-dialog .modal-inner-content h3{margin-bottom: 2rem;}
+.custom-modal.reset-password-modal .modal-dialog .modal-inner-content p{margin-bottom: 2rem;color: var(--secondary-text-color);}
+.custom-modal.reset-password-modal .modal-dialog .modal-inner-content button{width: auto;}
+.custom-modal .modal-dialog .modal-inner-content{overflow: hidden;}
+.custom-modal .title-wrapper{margin-bottom: 2.3rem;}
+.custom-modal .title-wrapper.has-close { padding-right: 3rem;}
+.custom-modal .modal-footer-block .button-wrapper{ display: flex; justify-content: flex-end; margin-top: 2.4rem; padding-top: 1.6rem; gap: 0.8rem; position: relative;}
+.custom-modal .modal-footer-block .button-wrapper::before{position: absolute; width: calc(100% + 4.7rem); border-top: 0.1rem dashed var(--form-field-border-color); content:''; left: -2.4rem; right: -2.4rem; top: 0;}
+.custom-modal .modal-content-block p{ font-size: 1.4rem; color: var(--secondary-text-color); line-height: 1.4; font-size: 1.4rem;}
+.custom-modal .modal-content-block p + p{ margin-top: 0.6rem;}
+.custom-modal .modal-footer-block .button-wrapper.has-error-message{
+    justify-content: space-between;
+    align-items: center;
+}
+.custom-modal .modal-footer-block .button-wrapper.has-error-message .error-message em{
+    display: inline-block;
+    position: relative;
+    margin-right: 0.4rem;
+    top: -0.1rem;
+}
+.custom-modal .close-btn-wrapper{
+    position: absolute;
+    top: 1.6rem;
+    right: 1.6rem;
+}
+.custom-modal .primary-btn.small-btn,
+.custom-modal .outline-btn
+{
+    padding: 0 1.4rem;
+    min-width: 7.5rem;
+}
+/* secure your account modal css */
+.secure-your-account-wrapper .form-block{width: 100%;max-width: 100%;}
+.secure-your-account-wrapper .form-block .title-block .h1{margin-bottom: 0.8rem;}
+.secure-your-account-wrapper .form-block .title-block p {font-size: 1.3rem;}
+.secure-your-account-wrapper .otp-wrapper{justify-content: flex-start;}
+.secure-your-account-wrapper .otp-wrapper .otp-input-wrapper input{height: 4rem;width: 4rem;}
+.secure-your-account-wrapper .content-wrapper{text-align: center; margin-bottom: 2.4rem;}
+.secure-your-account-wrapper .content-wrapper p{color: var(--secondary-text-color); line-height: 1.4; font-size: 1.5rem;}
+.secure-your-account-wrapper .content-wrapper p + p{margin-top: 0.8rem;}
+.secure-your-account-wrapper .title-block {margin-bottom: 2.4rem;}
+#step-3 .secure-your-account-wrapper .form-block .title-block p{font-size: 1.5rem;}
+.secure-your-account-wrapper .form-block .message{font-weight: 400;text-align: center;}
+.secure-your-account-wrapper .form-block #unsupported_software_text.message{font-size: 1.2rem;}
+.custom-modal .modal-content-wrapper .modal-dialog:has(#secure-account-stepper.active-step-3){max-width: 65.6rem;}
+#step-3 .secure-your-account-wrapper .content-wrapper p.step-text{max-width: 40rem; margin: 0 auto;}
+/* account-review-modal css  */
+.custom-modal.account-review-modal .title-block h2{ margin-bottom: 0.7rem;font-size: 2.8rem;}
+.custom-modal.account-review-modal .title-block p{font-size: 1.4rem;color: var(--secondary-text-color);}
+.custom-modal.account-review-modal .title-block {margin-bottom: 2.6rem; }
+.custom-modal.account-review-modal .modal-content-block .primary-btn{margin-top: 3.2rem;}
+.custom-modal.account-review-modal .modal-content-block p{max-width: 40.6rem;margin: 0 auto;}
+.custom-modal.account-review-modal .modal-content-block p + p{ margin-top: 1.6rem;}
+
+/* change password modal */
+.custom-modal.change-password-modal .modal-footer-block .button-wrapper .primary-btn { min-width: 14.1rem;padding: 0 1.2rem;}
+
+/* two factor modal */
+.custom-modal.two-factor-authentication-modal p { font-size: 1.3rem;line-height: 1.4;font-weight: 500;letter-spacing: -0.06rem;}
+.custom-modal.two-factor-authentication-modal .otp-wrapper { justify-content: flex-start;}
+.custom-modal.two-factor-authentication-modal .form-group label { font-weight: 500;}
+.custom-modal.two-factor-authentication-modal .primary-link { margin-top: 1rem;}
+
+/* cancel subscription modal */
+.cancel-subscription .modal-content-block p{
+ margin-bottom: 1rem;
+}
+.custom-modal.center-modal h3{
+    margin-bottom: 1rem;
+}
+.custom-modal.center-modal .info-hint{
+    line-height: 1.4;
+    max-width: 90%;
+    margin: 0 auto;
+}
+.custom-modal .modal-content-block .listing-block{
+ text-align: left;
+}
+.custom-modal .modal-content-block .listing-block li{
+ margin-bottom: 0;
+ position: relative;
+ padding-left: 1.5rem;
+ line-height: 1.4;
+ font-size: 1.4rem;
+ color: var(--secondary-text-color);
+}
+.custom-modal .modal-content-block .listing-block li::before{
+position: absolute;
+content: '';
+left: 0.4rem;
+height: 0.4rem;
+width: 0.4rem;
+background-color: var(--secondary-text-color);
+border-radius: 50%;
+top: 0.7rem;
+}
+.custom-modal .modal-content-block span{
+    font-size: 1.4rem;
+    display: inline-block;
+}
+.custom-modal .modal-content-block .listing-block span{
+  font-weight: 700; 
+  margin-bottom: 0.4rem;
+  color: var(--secondary-text-color);
+  line-height: 1.4;
+}
+.custom-modal .modal-content-block .listing-block p{
+    margin-bottom: 0.5rem;
+}
+.custom-modal .modal-content-block .listing-block li+li{
+ margin-top: 0.4rem;
+}
+.custom-modal .modal-content-block .listing-block{
+margin-bottom: 0.8rem;
+}
+.custom-modal .modal-content-block.has-info-list p+p{
+margin-top: 2rem;
+}
+.custom-modal .modal-content-block.has-info-list p span{
+    color: var(--primary-text-color);
+}
+.custom-modal .modal-content-block .info-list p{
+  display: inline-block;
+}
+.custom-modal .modal-content-block .list span{
+    font-weight: 600;
+    color: var(--secondary-text-color);
+}
+.custom-modal .modal-content-block .info-list p span{
+  color: var(--green-color);
+}
+.custom-modal .modal-content-block .info-list{
+    margin: 2rem 0;
+}
+.custom-modal .modal-content-block .list + .list{
+  margin-top: 1.2rem;
+}
+.custom-modal .modal-content-block.has-info-list > span{
+ font-size: 1.5rem;
+ font-weight: 600;
+ color: var(--secondary-text-color);
+}
+.custom-modal .select-date-time-wrapper p{
+    font-size: 1.4rem;
+    margin-top: 1rem;
+}
+.custom-modal .select-date-time-wrapper .left-block{
+    flex: 0 0 29.2rem;
+    max-width: 29.2rem;
+}
+.custom-modal .select-date-time-wrapper .left-block p{
+    font-weight: 600;
+    margin-bottom: 0.5rem;
+}
+.custom-modal .select-date-time-wrapper .right-block{
+    flex: 0 0 calc(100% - 29.2rem);
+    max-width: calc(100% - 29.2rem);
+    padding-left: 3.2rem;
+}
+.custom-modal .select-date-time-wrapper .right-block .flatpickr-time {
+    display: none;
+}
+.custom-modal .select-date-time-wrapper .right-block label{
+    color: var(--secondary-text-color);
+    font-weight: 400;
+}
+.custom-modal .select-date-time-wrapper .right-block p{
+    margin-bottom: 1.6rem;
+}
+.custom-modal .modal-content-block.has-dark-text,
+.custom-modal .modal-content-block.has-dark-text p
+{
+    color: var(--primary-text-color);
+}
+.custom-modal .message-wrapper
+{
+   border: 0.1rem solid var(--form-field-border-color);
+   border-radius: 0.4rem;
+   padding: 1.1rem 1.4rem;
+}
+.custom-modal .message-wrapper .message-block{
+    min-height: 17.2rem;
+    height: 17.2rem;
+    overflow-y: auto;
+}
+.custom-modal .message-wrapper .btn-block{
+    flex-wrap: wrap;
+}
+.custom-modal .message-wrapper .message-block p{
+    font-size: 1.3rem;
+    line-height: 1;
+}
+.custom-modal .message-wrapper .message-block span{
+    color: var(--secondary-text-color);
+    font-size: 1.3rem;
+}
+.custom-modal .message-wrapper .message-block p + p{
+   margin-top: 1.5rem;
+}
+.custom-modal .message-wrapper .message-block p span{
+    color: var(--primary-color);
+    font-weight: 500;
+}
+.custom-modal  .message-limit p{
+    color: rgba(33, 37, 41 ,80%);
+    font-weight: 500;
+    font-size: 1.3rem;    
+}
+.custom-modal .message-limit p:not(:last-child){
+    padding-right: 0.8rem;
+    margin-right: 0.8rem;
+    border-right: 0.2rem solid var(--form-field-border-color);
+    border-radius: 0.1rem;
+}
+
+/* has-footer css */
+.custom-modal.has-footer .modal-content-wrapper .modal-dialog{
+    max-width: 64.2rem;
+}
+.custom-modal.has-footer .modal-dialog .modal-inner-content{
+    padding: 2.4rem 2.4rem 1.6rem;
+    overflow: visible;
+}
+
+/* template popup css */
+.custom-modal.tampate-popup .modal-content-wrapper .modal-dialog {
+    max-width: 86rem;
+}
+.tampate-popup .btn-block-outer-wrapper{
+    position: relative;
+}
+.tampate-popup .has-menu{
+    position: relative;
+}
+.tampate-popup .has-menu .menu-wrapper{
+    background-color: var(--text-white);
+    padding: 0.4rem;
+    border-radius: 0.4rem;
+    box-shadow: 0px 3px 16px rgba(0, 0, 0, 0.1);
+    position: absolute;
+    width: 17rem;
+    top: -21.1rem;
+    left: 50%;
+    transform: translateX(-50%);
+    opacity: 0;
+    visibility: hidden;
+    transition: 0.3s all;
+}
+.tampate-popup .has-menu.open-menu .menu-wrapper{
+    opacity: 1;
+    visibility: visible;
+}
+.tampate-popup .menu-wrapper li{
+    display: flex;
+    align-items: center;
+    gap: 0.8rem;
+    transition: 0.3s all;
+}
+.tampate-popup .menu-wrapper li a{
+    font-size: 1.3rem;
+    padding: 0.7rem 0.8rem;
+    color: var(--primary-text-color);
+    display: block;
+    width: 100%;
+}
+.tampate-popup .menu-wrapper li:hover{
+    background: var(--border-btn-hover);
+}
+.tampate-popup .menu-wrapper li .info-tooltip{
+    padding-right: 0.8rem;
+}
+.tampate-popup .tooltip-text{
+    line-height: 1.3;
+}
+.tampate-popup .tooltip-text p{
+    color: var(--text-white);
+}
+.tampate-popup .menu-wrapper li + li{
+    margin-top: 0.4rem;
+}
+.tampate-popup .has-menu .arrow{
+    transform: rotate(180deg);
+    position: relative;
+    top: 0.1rem;
+    transition: 0.3s all;
+}
+.tampate-popup .has-menu.open-menu .arrow{
+    transform: rotate(0deg);
+}
+
+/* schedule-time-modal css  */
+.schedule-time-modal .flatpickr-calendar{
+    box-shadow: unset;
+    padding-top: 0;
+    top: 0;
+    width: 100%;
+}
+.schedule-time-modal .flatpickr-calendar .flatpickr-months{
+    margin-top: 0.3rem;
+}
+.schedule-time-modal .datepicker-wrapper:not(.has-range-picker)::after{
+   display: none;
+}
+.custom-modal.free-trial-end-soon .modal-content-wrapper .modal-dialog,
+.custom-modal.account-suspended .modal-content-wrapper .modal-dialog,
+.custom-modal.campaign-sent .modal-content-wrapper .modal-dialog
+{
+    max-width: 54.8rem;
+}
+.custom-modal.set-up-preferred-provider .modal-content-wrapper .modal-dialog
+{
+    max-width: 61rem;
+}
+.custom-modal.unrecognized-insurance .modal-content-wrapper .modal-dialog
+{
+    max-width: 57.6rem;
+}
+.custom-modal.update-patient-data .modal-content-wrapper .modal-dialog,
+.custom-modal.no-eligible-patients .modal-content-wrapper .modal-dialog
+{
+    max-width: 45rem;
+}
+.custom-modal.recall-sms-confirmation .modal-content-wrapper .modal-dialog
+{
+    max-width: 46.6rem;
+}
+.custom-modal .modal-dialog .modal-inner-content .due-info{
+    margin-bottom: 1.6rem;
+}
+.custom-modal .modal-dialog .modal-inner-content .due-info span{
+    font-size: 1.7rem;
+}
+/* toast-msg css  */
+.toast-message-wrapper.congratulation-toast-message{
+    max-width: 58.8rem;
+}
+.toast-message-wrapper .toast-message{
+    display: flex;
+    align-items: center;
+}
+.toast-message-wrapper .toast-message p{
+  line-height: 1.5;
+}
+.toast-message-wrapper .toast-message .image-block{
+    margin-right: 0.8rem;
+    display: inline-flex;
+    min-width: 16px;
+}
+.toast-message-wrapper.congratulation-toast-message p span{
+   display: block;
+}
+.toast-message-wrapper.congratulation-toast-message .close-icon{
+    position: absolute;
+    right: 1rem;
+    top: 0.5rem;
+    cursor: pointer;
+}
+.congratulation-toast-message{
+    max-width: 55rem;
+    padding: 1.3rem 1.4rem;
+}
+.custom-modal.secure-your-accout-modal .modal-dialog .modal-inner-content{margin: 3rem 0;}
+body:has(.secure-your-accout-modal) .toast-message-wrapper.top-pos{top: 0.4rem;}
+.custom-modal[data-target="update-patient-modal"] .form-group .has-search-fild .search-icon{top: 2.06rem;}
+.custom-modal.account-pending-review .modal-backdrop,
+.custom-modal.secure-your-accout-modal .modal-content-wrapper,
+.custom-modal.secure-your-accout-modal .modal-backdrop{backdrop-filter: blur(5.5px);}
+.custom-modal.account-pending-review .modal-content-wrapper,
+.custom-modal.secure-your-accout-modal .modal-content-wrapper{backdrop-filter: blur(5.5px);}
+@media(min-width:576px) {
+    .custom-modal .modal-content-wrapper .modal-dialog {min-height:calc(100% - (1.75rem * 2));margin: 1.75rem auto;}
+}
+@media(max-width:767px) {
+    .custom-modal .modal-dialog .modal-inner-content{padding:2.5rem}
+    .custom-modal.account-review-modal .title-block{margin-bottom:2rem}
+    .custom-modal.large-modal .modal-dialog .modal-inner-content { padding: 2rem 2rem 1.6rem;}
+    .custom-modal .modal-footer-block.full-border .button-wrapper { margin: 2rem -2rem 0; padding: 1.6rem 2rem 0;}
+    .custom-modal.account-review-modal .modal-content-block .primary-btn{margin-top:2.5rem}
+    .secure-your-account-wrapper .title-block {margin-bottom: 2rem;}
+    .secure-your-account-wrapper .content-wrapper {margin-bottom: 2rem; }  
+    .custom-modal .modal-close { right: 1.8rem;top: 1.8rem;}
+    .custom-modal .title-wrapper.has-close { padding-right: 2rem;}
+    .custom-modal.account-review-modal .title-block h2{font-size: 2.4rem;}
+}
+@media(max-width:575px) {
+    .secure-your-account-wrapper .otp-wrapper .otp-input-wrapper input {height: 3.5rem; width: 3.5rem;}
+    .custom-modal .modal-dialog .modal-inner-content .tick-image-wrapper{height: 5rem; width: 5rem;}
+    .custom-modal.center-modal .info-hint{max-width: 80%;}
+}
+@media(max-width:479px) {
+    .secure-your-account-wrapper .otp-wrapper .otp-input-wrapper input {height: 3rem; width: 3rem;}
+    .custom-modal .btn-block-responsive{
+        flex-direction: column;
+    }
+}
+@media(max-width:379px) {
+    .secure-your-account-wrapper .otp-wrapper .otp-input-wrapper input {height: 2.5rem; width: 2.5rem;}
+    .secure-your-account-wrapper .otp-wrapper .otp-input-wrapper {padding: 0 0.3rem;}
+    .secure-your-account-wrapper .otp-wrapper {margin: 0 -0.3rem;}
+}
+@media(max-width: 374px){
+    .tampate-popup .message-limit{flex-direction: column;}
+    .custom-modal .message-limit p:not(:last-child){margin-right: 0;padding-right: 0;border:none;}
+}

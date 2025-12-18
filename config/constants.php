@@ -239,8 +239,8 @@ return [
             'CUSTOMER_KEY' => 'stripe_customer_id',
         ],
         'PRODUCT' => [
-            'NAME' => 'Smileorbit Subscription',
-            'DESCRIPTION' => 'Smileorbit Subscription',
+            'NAME' => 'Clinicmanagement Subscription',
+            'DESCRIPTION' => 'Clinicmanagement Subscription',
         ],
         'TAX' => [
             'NAME' => 'GST',
@@ -360,8 +360,8 @@ return [
     'UNIT_PRICE' => '$0.09',
     'INVOICE_DEFAULT_DESCRIPTION' => 'SMS - MOBILE',
     'FOOTER_TEXT' => 'If you have any questions, feel free to email the billing team at',
-    'CONTACT_EMAIL' => 'support@smileorbit.com',
-    'CONTACT_SUPPORT' => 'https://smileorbit.com/support/',
+    'CONTACT_EMAIL' => 'support@Clinicmanagement.com',
+    'CONTACT_SUPPORT' => 'https://Clinicmanagement.com/support/',
     'SUBSCRIPTION_PLANS' => [
         ['max_contacts' => 1000, 'price' => 249],
         ['max_contacts' => 2000, 'price' => 329],
@@ -493,7 +493,7 @@ return [
         'LIMIT' => 25,
         'RECALL_MONTHS' => 6,
     ],
-    'SMILE_ORBIT_ABN' => '36660679327',
+    'clinic_management_ABN' => '36660679327',
     'CREDIT_RENEW_NOTIFICATION_DAYS' => 7,
     'UNUSED_SEGMENTS_THRESHOLD' => 50,
     'MAX_LENGTH' => [

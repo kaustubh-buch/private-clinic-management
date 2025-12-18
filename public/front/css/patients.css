@@ -1,0 +1,42 @@
+.patient-list-page-wrapper{
+    overflow: hidden;
+}
+.patient-list-page-wrapper .tab-search-wrapper{
+    padding-bottom: 1.8rem;    
+}
+.patient-list-page-wrapper .tab-search-wrapper.white-card{
+    margin-bottom: 1.4rem;
+}
+.patient-list-page-wrapper{
+    position:relative;
+}
+.patient-list-page-wrapper table.dataTable:not(.custom-two-row) tr:last-child .action-col .threedot-menu-wrapper .threedot-menu,
+.patient-list-page-wrapper table.dataTable:not(.custom-two-row) tr:nth-last-child(2) .action-col .threedot-menu-wrapper .threedot-menu {
+    top: auto;bottom: calc(100% + 0.6rem);
+}
+.patient-list-page-wrapper .custom-table-wrapper div.dt-container div.dt-layout-row div.dt-layout-cell.dt-layout-full{
+    min-height: 27rem;
+}
+.patient-list-page-wrapper .tab-search-wrapper.white-card .search-box{
+    position: relative;
+}
+.patient-list-page-wrapper .tab-search-wrapper.white-card .search-box.form-group .form-control{
+    min-width: 25.7rem;
+}
+.patient-list-page-wrapper ul.typeahead.dropdown-menu li a.dropdown-item{
+    font-size: 1.3rem;
+}
+@media(max-width: 767px){
+    .patient-list-page-wrapper .tab-search-wrapper.white-card{
+        flex-wrap: wrap;
+        gap: 1.5rem
+    }
+}
+@media(max-width: 374px){
+    .patient-list-page-wrapper .tab-search-wrapper.white-card .search-box{
+        width: 100%;
+    }
+    .patient-list-page-wrapper .tab-search-wrapper.white-card .search-box.form-group .form-control{
+        min-width: 100%;
+    }
+}

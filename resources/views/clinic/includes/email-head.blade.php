@@ -1,7 +1,7 @@
 <meta charset="UTF-8">
 <meta http-equiv="x-ua-compatible" content="IE=edge" />
 <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
-<title>SmileOrbit</title>
+<title>Clinicmanagement</title>
 <style type="text/css">
   body {
     margin: 0;

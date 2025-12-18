@@ -1,0 +1,35 @@
+
+
+/* template accordion */
+.template-accordion-parent .template-accordion { border-bottom: 2px solid #D8D9DB;padding: 1.9rem 1.7rem 1.9rem 0rem;white-space: normal;}
+.template-accordion-parent .template-accordion .template-accordion-title .template-accordion-heading { cursor: pointer;flex: 1;font-size: 1.5rem;font-weight: 500;letter-spacing: -0.008rem;line-height: 1.4;padding:1.9rem 2rem 1.9rem 0;margin: -1.9rem 0 -1.9rem;}
+.template-accordion-parent .template-accordion .template-accordion-title { display: flex;align-items: center;}
+.template-accordion-parent .template-accordion .template-accordion-content { padding-top: 1.4rem;border-top: 1px solid #D8D9DB;margin-top: 1.4rem;}
+.template-accordion-parent .template-accordion:not(.active) .template-accordion-content { display: none;}
+
+
+/* template page */
+.templates-page-wrapper { margin-bottom: 0;}
+.templates-page-wrapper table.dataTable { min-width: 57.5rem;}
+.templates-page-wrapper .tab-search-wrapper { margin-bottom: 1.8rem;}
+.templates-page-wrapper .expandable-table .add-template-col { width: 16.8rem;}
+.templates-page-wrapper .expandable-table .dt-hasChild .add-template-col .primary-border-btn { opacity: 1;visibility: visible;}
+.templates-page-wrapper .expandable-table .add-template-col .primary-border-btn { opacity: 0;visibility: hidden;padding: 0 1.2rem; }
+.templates-page-wrapper .custom-table-wrapper div.dt-container .dt-layout-row.dt-layout-table { margin-bottom: 2rem;}
+.templates-page-wrapper .custom-table.dataTable > thead > tr > th { height: 4.4rem;}
+.templates-page-wrapper .custom-table.dataTable > thead > tr > th:first-child { border-radius: 0.4rem 0 0 0.4rem;}
+.templates-page-wrapper .custom-table.dataTable > thead > tr > th:last-child { border-radius: 0 0.4rem 0.4rem 0;}
+.templates-page-wrapper .custom-table.dataTable > tbody > tr > td { padding: 1.2rem;}
+.templates-page-wrapper .custom-table.dataTable.promotional-template-table > tbody > tr > td { padding: 1.9rem 1.2rem;}
+.templates-page-wrapper .error-message { margin-top: 1.2rem !important; letter-spacing: -0.008rem;}
+.templates-page-wrapper .action-col { width: 7.2rem;}
+.templates-page-wrapper table.dataTable tr:last-child .action-col .threedot-menu-wrapper .threedot-menu { top: auto;bottom: calc(100% + 0.6rem);}
+.template-accordion-parent .template-accordion:last-child .threedot-menu-wrapper .threedot-menu { top: auto;bottom: calc(100% + 0.6rem);}
+.template-accordion-parent .template-accordion .threedot-menu-wrapper .threedot-menu{min-width: 11rem;}
+
+@media(max-width:767px) {
+    
+    .template-accordion-parent .template-accordion { padding: 1.2rem 1.5rem 1.2rem 0rem;}
+    .template-accordion-parent .template-accordion .template-accordion-title .template-accordion-heading {padding:1.2rem 2rem 1.2rem 0;margin: -1.2rem 0 -1.2rem; }
+    .template-accordion-parent .template-accordion .template-accordion-content {padding-top: 1.2rem; margin-top: 1.2rem;}
+}

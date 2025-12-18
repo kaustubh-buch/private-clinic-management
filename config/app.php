@@ -18,7 +18,7 @@ return [
     |
     */
 
-    'name' => env('APP_NAME', 'Smile Orbit'),
+    'name' => env('APP_NAME', 'Clinic Management'),
 
     /*
     |--------------------------------------------------------------------------

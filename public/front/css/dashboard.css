@@ -1,0 +1,185 @@
+.page-inner-wrapper .title-wrapper .primary-btn{white-space: nowrap;}
+.dashboard-grid-content-wrapper { display: flex; flex-wrap: wrap; margin: 0 -1rem -2rem;}
+.dashboard-grid-content-wrapper .dashboard-grid-item{ padding: 0 1rem 2rem; flex: 0 0 100%; max-width: 100%;}
+.dashboard-grid-content-wrapper .dashboard-grid-item.col-3{ flex: 0 0 33.33%; max-width: 33.33%;}
+.dashboard-grid-content-wrapper .dashboard-grid-item.recalls-on-demand-card-wrapper{flex: 0 0 33.8%; max-width: 33.8%;}
+.dashboard-grid-content-wrapper .dashboard-grid-item.upcoming-sms-card-wrapper{flex: 0 0 66.2%; max-width: 66.2%;}
+.dashboard-grid-content-wrapper .dashboard-grid-item .white-card{ margin: 0;}
+.dashboard-grid-content-wrapper .dashboard-grid-item .card-block{ padding: 2.4rem; border-radius: 0.8rem; height: 100%; font-size: 1.4rem;}
+.dashboard-grid-content-wrapper .dashboard-grid-item .color-card{  color: var(--text-white);  font-size: 1.4rem;  font-weight: 500;}
+.dashboard-grid-content-wrapper .dashboard-grid-item .color-card span{     margin-bottom: 1.5rem; display: inline-block;     color: rgb(255 255 255 / 80%);}
+.dashboard-grid-content-wrapper .dashboard-grid-item .color-card .count{ font-size: 2.8rem; font-weight: 600; margin-bottom: 0.8rem; display: block; color: var(--text-white);}
+.dashboard-grid-content-wrapper .dashboard-grid-item .color-card p{ padding-left: 2rem; position: relative;color: rgb(255 255 255 / 80%);}
+.dashboard-grid-content-wrapper .dashboard-grid-item .color-card p::before{ height: 0.5rem; width: 0.5rem; background-color: rgb(255 255 255 / 80%); content: ''; position: absolute; left: 0.5rem; border-radius: 50%; top: 0.6rem;}
+.dashboard-grid-content-wrapper .dashboard-grid-item .blue-card{ background: conic-gradient(from 127deg at 73.38% 44.83%, #6367FD 0deg, #191B5F 360deg);}
+.dashboard-grid-content-wrapper .dashboard-grid-item .orange-card{ background: conic-gradient(from 127deg at 73.61% 44.83%, #FE7443 0deg, #984528 360deg);}
+.dashboard-grid-content-wrapper .dashboard-grid-item .purple-card{ background: conic-gradient(from 127deg at 73.56% 44.83%, #8E65FD 0deg, #553C97 360deg);}
+.dashboard-grid-content-wrapper .dashboard-grid-item .recall-follow-up-card h2{ margin-bottom: 1.8rem;}
+.dashboard-grid-content-wrapper .dashboard-grid-item .patient-list span{ color: var(--primary-text-color);}
+.dashboard-grid-content-wrapper .dashboard-grid-item .recall-follow-up-card ul li{ color: rgba(116, 121, 133,0.8); font-weight: 500; position: relative; padding-left: 3.3rem; line-height: 1.4;}
+.dashboard-grid-content-wrapper .dashboard-grid-item .recall-follow-up-card ul li + li{ margin-top: 1.5rem;}
+.dashboard-grid-content-wrapper .dashboard-grid-item .recall-follow-up-card ul li::before{ position: absolute; content: ''; left: 0; top: 0; height: 2rem; width: 2rem; background-size: cover; background-image: url(../images/purple-tick-mark.svg);}
+.dashboard-grid-content-wrapper .dashboard-grid-item .recall-follow-up-card ul li span{ color: var(--primary-text-color);}
+.dashboard-grid-content-wrapper .dashboard-grid-item .recall-follow-up-card .btn{ margin-top: 2.4rem;}
+.dashboard-grid-content-wrapper .dashboard-grid-item .recalls-on-demand-card{ background-color: var(--primary-color);  text-align: center; color: var(--text-white); position: relative; z-index: 1;}
+.dashboard-grid-content-wrapper .dashboard-grid-item .recalls-on-demand-card::after{ position: absolute; width: 100%; height: 100%; background-image: url(../images/recell-on-demand-card-bg.png); background-repeat: no-repeat; content: ''; background-size: cover; bottom: 0; right: 0; z-index: -1;}
+.dashboard-grid-content-wrapper .dashboard-grid-item .recalls-on-demand-card h2{ font-size: 2.3rem; font-weight: 600; line-height: 1.4; margin-bottom: 0.6rem;letter-spacing: -0.08px;}
+.dashboard-grid-content-wrapper .dashboard-grid-item .recalls-on-demand-card p{ font-weight: 500; font-size: 1.2rem; margin-top: 1.2rem; line-height: 1.4;}
+.dashboard-grid-content-wrapper .dashboard-grid-item .recalls-on-demand-card .title-block{ margin-bottom: 6.2rem;}
+.dashboard-grid-content-wrapper .dashboard-grid-item .recalls-on-demand-card .title-block p{ font-size: 1.4rem; margin: 0;}
+.dashboard-grid-content-wrapper .dashboard-grid-item .upcoming-sms-card .has-tooltip .info-tooltip .tooltip-icon
+{
+   width: 1.5rem;
+}
+.dashboard-grid-content-wrapper .dashboard-grid-item .upcoming-sms-card .has-tooltip .info-tooltip
+{
+   width: 1.5rem;
+}
+.dashboard-grid-content-wrapper .dashboard-grid-item .recalls-on-demand-card .info-tooltip .tooltip-icon{
+    max-width: 27.5rem;
+}
+.dashboard-grid-content-wrapper .dashboard-grid-item .recalls-on-demand-card .info-tooltip .tooltip-text{
+    text-align: left;
+    /* max-width: 26.4rem; */
+    width: 274px;
+    white-space: normal;
+    word-wrap: break-word;
+}
+.dashboard-grid-content-wrapper .dashboard-grid-item .upcoming-sms-card .upcoming-sms-list{
+    height: 21rem;
+    /* max-height: 27rem; */
+    overflow-y: auto;
+}
+.dashboard-grid-content-wrapper .dashboard-grid-item .upcoming-sms-card .sms-block{
+    display: flex;
+    gap: 1.6rem;
+    position: relative;
+} 
+.dashboard-grid-content-wrapper .dashboard-grid-item .upcoming-sms-card .sms-block + .sms-block{
+    margin-top: 2.4rem;
+}
+.dashboard-grid-content-wrapper .dashboard-grid-item .upcoming-sms-card .icon-block{
+  position: relative;
+} 
+.dashboard-grid-content-wrapper .dashboard-grid-item .upcoming-sms-card .icon-block .icon{
+    height: 1rem;
+    width: 1rem;
+    border-radius: 50%;
+    border: 0.1rem solid var(--form-field-border-color);
+    background-color: var(--text-white);
+    margin-top: 0.3rem;
+} 
+.dashboard-grid-content-wrapper .dashboard-grid-item .upcoming-sms-card .sms-block:not(:last-child) .icon-block::after{
+    position: absolute;
+    width: 0.1rem;
+    height: calc(100% + 2.4rem);
+    background-color: var(--form-field-border-color);
+    content: "";
+    left: 50%;
+    transform: translateX(-50%);
+}
+.dashboard-grid-content-wrapper .dashboard-grid-item .upcoming-sms-card .date-block{
+    line-height: 1;
+    max-width: 2.6rem;
+    flex: 0 0 2.6rem;
+    text-align: center;
+}
+.dashboard-grid-content-wrapper .dashboard-grid-item .upcoming-sms-card .date-block p{
+    color: var(--primary-color);
+    font-weight: 600;
+    font-size: 1.8rem;
+}
+.dashboard-grid-content-wrapper .dashboard-grid-item .upcoming-sms-card .date-block span{
+    color: var(--secondary-text-color);
+    font-weight: 500;
+    font-size: 1.1rem;
+}
+.dashboard-grid-content-wrapper .dashboard-grid-item .upcoming-sms-card .sms-detail p{
+    font-size: 1.3rem;
+    color: var(--primary-text-color);
+    font-weight: 500;
+}
+.dashboard-grid-content-wrapper .dashboard-grid-item .upcoming-sms-card .sms-detail span{
+    font-size: 1.1rem;
+    color: var(--secondary-text-color);
+}
+.dashboard-grid-content-wrapper .dashboard-grid-item .no-upcoming-sms-list{
+    height: calc(100% - 4rem);
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    text-align: center;
+}
+.dashboard-grid-content-wrapper .dashboard-grid-item .no-upcoming-sms-list p{
+    max-width: 37rem;
+    font-size: 1.3rem;
+    color: var(--primary-text-color);
+    line-height: 1.5;
+}
+
+.select-with-image .select2-container--default .select2-results>.select2-results__options {
+    max-height: 14.6rem;
+}
+
+.dashboard-wrapper{
+    display: none;
+}
+
+@media(max-width:1199px){   
+    .dashboard-grid-content-wrapper .dashboard-grid-item.recalls-on-demand-card-wrapper {
+        flex: 0 0 50%;
+        max-width: 50%;
+    }
+    .dashboard-grid-content-wrapper .dashboard-grid-item.upcoming-sms-card-wrapper {
+        flex: 0 0 50%;
+        max-width: 50%;
+    }
+}
+@media(max-width:991px){
+    .dashboard-grid-content-wrapper .dashboard-grid-item.col-3 {
+        flex: 0 0 50%;
+        max-width: 50%;
+    }  
+    .dashboard-grid-content-wrapper .dashboard-grid-item .card-block {
+        padding: 1.5rem
+    } 
+}
+@media(max-width:767px){
+    .dashboard-grid-content-wrapper .dashboard-grid-item.recalls-on-demand-card-wrapper {
+        flex: 0 0 100%;
+        max-width: 100%;
+    }
+    .dashboard-grid-content-wrapper .dashboard-grid-item.upcoming-sms-card-wrapper {
+        flex: 0 0 100%;
+        max-width: 100%;
+    }
+    .dashboard-grid-content-wrapper .dashboard-grid-item .recalls-on-demand-card .title-block {
+        margin-bottom: 2rem;
+    }
+    .dashboard-grid-content-wrapper .dashboard-grid-item .recalls-on-demand-card h2{
+        font-size: 2rem;
+    }
+}
+@media(max-width:575px){
+    .dashboard-grid-content-wrapper .dashboard-grid-item.col-3 {
+        flex: 0 0 100%;
+        max-width: 100%;
+    }
+    .dashboard-grid-content-wrapper .dashboard-grid-item .upcoming-sms-card .sms-block{
+        gap: 1.2rem;
+    }
+    .page-inner-wrapper .title-wrapper{
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .page-inner-wrapper .title-wrapper h2{
+        margin-bottom: 1rem;
+    }
+}
+@media(max-width:379px){
+    .page-inner-wrapper .title-wrapper .btn-block{
+        flex-direction: column;
+    }
+}
+

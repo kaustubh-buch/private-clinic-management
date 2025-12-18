@@ -1,0 +1,31 @@
+.profile-page-wrapper{display: flex;}
+.profile-page-wrapper .profile-col{flex:0 0 39rem;max-width: 39rem;}
+.profile-page-wrapper .profile-col.large{flex:0 0 calc(100% - 39rem);max-width: calc(100% - 39rem);padding-right: 2rem;}
+.profile-page-wrapper .profile-col h2{font-size: 1.8rem;font-weight: 600;letter-spacing: -0.008rem;margin-bottom: 1.7rem;}
+.profile-page-wrapper .profile-col h2 a {color: var(--primary-text-color);}
+.profile-page-wrapper .form-group label{font-weight: 500;display: inline-block;margin-bottom: 1rem;margin-bottom: 0.8rem;line-height: 1.2;}
+.profile-page-wrapper .form-wrapper{margin: 0 -1rem -1.8rem;}
+.profile-page-wrapper .form-wrapper .form-group{padding: 0 1rem 1.8rem;}
+.profile-page-wrapper .form-info-title{display: flex;align-items: center;margin-bottom: 0.8rem;}
+.profile-page-wrapper .form-group .form-info-title label{margin-bottom: 0;}
+.profile-page-wrapper .form-info-title .switch{margin:0 0 0 0.4rem;}
+.profile-page-wrapper .form-info-title .info-tooltip{margin:0 0 0 0.4rem;}
+.profile-page-wrapper .profile-col .white-card h2:last-child {margin: 0;}
+.profile-page-wrapper .profile-col .auth-change{color:var(--secondary-text-color);font-size: 1.3rem;font-weight: 500;letter-spacing:-0.008rem;padding-top: 0.5rem;}
+.profile-page-wrapper .profile-col .change-link{margin-left: 0.5rem;font-weight: 600;}
+
+@media(max-width:991px){
+    .profile-page-wrapper .profile-col{flex:0 0 100%;max-width:100%;}
+    .profile-page-wrapper{flex-wrap:wrap;}
+    .profile-page-wrapper .profile-col.large{flex:0 0 100%; max-width:100%;padding-right: 0;}
+    .profile-page-wrapper .white-card.large-top-space{margin-bottom: 0;}
+}
+@media(max-width:767px){
+    .profile-page-wrapper .profile-col h2{margin-bottom: 1rem;}
+    .profile-page-wrapper .form-group label{margin-bottom: 0.6rem;}
+}
+@media(max-width:575px){
+    .profile-page-wrapper .form-wrapper .form-group.half-width{flex:0 0 100%;max-width: 100%;}
+    .profile-page-wrapper .form-wrapper .form-group.half-width,.profile-page-wrapper .form-wrapper .form-group{padding: 0 0 1.8rem;}
+    .profile-page-wrapper .form-wrapper{margin: 0 0 -1.8rem;}
+}

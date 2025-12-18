@@ -1,8 +1,8 @@
 <div class="auth-left">
     <div class="auth-left-inner">
         <div class="logo-block">
-            <a href="{{ route('home') }}" title="SmileOrbit">
-                <img src="{{ asset('front/images/smile-orbit-logo.svg') }}" alt="Site Logo">
+            <a href="{{ route('home') }}" title="Clinicmanagement">
+                <img src="{{ asset('front/images/clinic-management-logo.svg') }}" alt="Site Logo">
             </a>
         </div>
         <div class="image-wrapper">

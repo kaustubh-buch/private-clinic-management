@@ -1,0 +1,56 @@
+/* notification page css */
+.notification-page-wrapper .notification-outer-wrapper{
+    transform: scale(1);
+    position: static;
+    width: 100%;
+    max-width: 100%;
+    border-radius: 0;
+    box-shadow: none;
+    background-color: transparent;
+    opacity: 1;
+    transition: all 0.3s;
+    pointer-events: all;
+}
+.notification-page-wrapper .notification-outer-wrapper .notification-main-wrapper{
+    padding: 0;
+    max-height: 100% !important;
+    height: 100% !important;
+    overflow: unset;
+}
+.notification-page-wrapper .notification-outer-wrapper .notification-main-wrapper .notification-item:not(:last-child){
+    margin-bottom: 0;
+    border-bottom: 0.1rem solid #ECEDEF;
+}
+.notification-page-wrapper .notification-outer-wrapper .notification-main-wrapper .notification-item{
+    padding: 2.2rem 0;
+}
+.notification-page-wrapper .notification-outer-wrapper .notification-main-wrapper .notification-item:first-child{
+    padding-top: 0.9rem;
+}
+.notification-page-wrapper .notification-outer-wrapper .notification-main-wrapper .notification-item:last-child{
+    padding-bottom: 0.9rem;
+}
+.notification-page-wrapper .notification-outer-wrapper .notification-main-wrapper .notification-item{
+    justify-content: space-between;
+}
+.notification-page-wrapper .notification-outer-wrapper .notification-main-wrapper .notification-item .icon-content-block{
+    padding-right: 1.5rem;
+    flex: 1;
+}
+.notification-page-wrapper .notification-outer-wrapper .notification-main-wrapper .notification-item .icon-content-block + a{
+    flex-shrink: 0;
+}
+@media(max-width:480px) {
+    .notification-page-wrapper .notification-outer-wrapper .notification-main-wrapper .notification-item .content-wrapper {
+        padding-top: 0.5rem;
+        padding-left: 0;
+        flex: 0 0 100%;
+        max-width: 100%;
+    }
+    .notification-page-wrapper .notification-outer-wrapper .notification-main-wrapper .notification-item{
+        align-items: flex-start;
+    }
+    .notification-page-wrapper .notification-outer-wrapper .notification-main-wrapper .notification-item .icon-content-block + a{
+        padding-top: 0.7rem;
+    }
+}
