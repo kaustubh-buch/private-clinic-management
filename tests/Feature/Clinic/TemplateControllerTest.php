@@ -46,7 +46,7 @@ class TemplateControllerTest extends TestCase
         parent::tearDown();
     }
     
-    public function test_template_index_page()
+    public function test_index_page_template()
     {
         $this->templateCategoryRepository
             ->shouldReceive('getOverdueTemplates')
@@ -64,7 +64,7 @@ class TemplateControllerTest extends TestCase
         $response->assertViewIs('clinic.pages.template.index');
     }
 
-    public function test_template_stored()
+    public function test_stored_template()
     {
         $this->templateRepository
             ->shouldReceive('getPromotionalTemplates')
@@ -91,7 +91,7 @@ class TemplateControllerTest extends TestCase
         $response->assertSessionHas('success');
     }
     
-    public function test_template_updated()
+    public function test_updated_template()
     {
         $template = (object) [
             'id' => 1,
@@ -120,7 +120,7 @@ class TemplateControllerTest extends TestCase
         $response->assertSessionHas('success');
     }
     
-    public function test_template_set_as_default()
+    public function test_set_as_default_template()
     {
         $template = (object) [
             'template_category_id' => 1,
@@ -143,7 +143,7 @@ class TemplateControllerTest extends TestCase
         $response->assertSessionHas('success');
     }
     
-    public function test_template_deleted()
+    public function test_deleted_template()
     {
         $template = (object) [
             'template_category_id' => 1,

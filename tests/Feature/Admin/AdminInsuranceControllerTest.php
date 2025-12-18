@@ -28,14 +28,14 @@ class AdminInsurance extends TestCase
         parent::tearDown();
     }
     
-    public function test_insurance_index_page()
+    public function test_index_page()
     {
         $response = $this->get(route('admin.insurance.index'));
 
         $response->assertStatus(200);
     }
     
-    public function test_insurance_create_page()
+    public function test_create_page()
     {
         $response = $this->get(route('admin.insurance.create'));
 
@@ -43,7 +43,7 @@ class AdminInsurance extends TestCase
         $response->assertViewIs('admin.insurance.create');
     }
 
-    public function test_insurance_can_be_stored()
+    public function test_stored()
     {
         Software::factory()->create([
             'name' => config('constants.GLOBAL.SOFTWARE.DENTAL_4_WINDOWS'),
@@ -64,7 +64,7 @@ class AdminInsurance extends TestCase
         $response->assertSessionHas('success');
     }
    
-    public function test_edit_insurance_page()
+    public function test_edit_page()
     {
         $insurance = (object) ['id' => 1, 'name' => 'EditTest Insurance'];
 
@@ -81,7 +81,7 @@ class AdminInsurance extends TestCase
         $response->assertViewHas('insurance');
     }
 
-    public function test_edit_insurance_not_found()
+    public function test_edit_not_found()
     {
         $this->insuranceRepository
             ->shouldReceive('findOrFail')
@@ -94,7 +94,7 @@ class AdminInsurance extends TestCase
         $response->assertSessionHas('error');
     }
     
-    public function test_insurance_updated()
+    public function test_updated()
     {
         $this->insuranceRepository
             ->shouldReceive('update')
@@ -110,7 +110,7 @@ class AdminInsurance extends TestCase
         $response->assertSessionHas('success');
     }
 
-    public function test_insurance_deleted()
+    public function test_deleted()
     {
         $this->insuranceRepository
             ->shouldReceive('delete')
